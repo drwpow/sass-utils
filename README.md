@@ -81,21 +81,21 @@ Modify `margin-*` and `padding-*` on individual elements based on an `8px` grid.
 //  (M)argin
 // ----------
 @for $i from 0 to 16 {
-  .ma-#{$i} { margin: #{$i * 0.5}rem; }
-  .my-#{$i} { margin-top: #{$i * 0.5}rem; margin-bottom: #{$i * 0.5}rem; }
-  .mx-#{$i} { margin-right: #{$i * 0.5}rem; margin-left: #{$i * 0.5}rem; }
-  .mt-#{$i} { margin-top: #{$i * 0.5}rem; }
-  .mr-#{$i} { margin-right: #{$i * 0.5}rem; }
-  .mb-#{$i} { margin-bottom: #{$i * 0.5}rem; }
-  .ml-#{$i} { margin-left: #{$i * 0.5}rem; }
+  .ma#{$i} { margin: #{$i * 0.5}rem; }
+  .my#{$i} { margin-top: #{$i * 0.5}rem; margin-bottom: #{$i * 0.5}rem; }
+  .mx#{$i} { margin-right: #{$i * 0.5}rem; margin-left: #{$i * 0.5}rem; }
+  .mt#{$i} { margin-top: #{$i * 0.5}rem; }
+  .mr#{$i} { margin-right: #{$i * 0.5}rem; }
+  .mb#{$i} { margin-bottom: #{$i * 0.5}rem; }
+  .ml#{$i} { margin-left: #{$i * 0.5}rem; }
 }
-.ma-auto { margin: auto }
-.my-auto { margin-top: auto; margin-bottom: auto; }
-.mx-auto { margin-left: auto; margin-right: auto; }
-.mt-auto { margin-top: auto; }
-.mr-auto { margin-right: auto; }
-.mb-auto { margin-bottom: auto; }
-.ml-auto { margin-left: auto; }
+.maauto { margin: auto }
+.myauto { margin-top: auto; margin-bottom: auto; }
+.mxauto { margin-left: auto; margin-right: auto; }
+.mtauto { margin-top: auto; }
+.mrauto { margin-right: auto; }
+.mbauto { margin-bottom: auto; }
+.mlauto { margin-left: auto; }
 
 // ----------
 //  (P)adding
@@ -113,11 +113,11 @@ Modify `margin-*` and `padding-*` on individual elements based on an `8px` grid.
 
 #### Examples
 
-- `.mt-1`/`.mr-1`/`.mb-1`/`.ml-1`: increase `margin-top`/`-right`/`-bottom`/`-left` by 1 unit (`8px`)
-- `.mx-2`: increase `margin-left` and `margin-right` by 2 units (`16px`)
-- `.my-2`: increase `margin-top` and `margin-bottom` by 2 units (`16px`)
-- `.ma-3`: set all margins to 3 units (`margin: 24px`)
-- `.mx-auto`: set `margin-left` and `margin-right` to `auto`
+- `.mt1`/`.mr1`/`.mb1`/`.ml1`: increase `margin-top`/`-right`/`-bottom`/`-left` by 1 unit (`8px`)
+- `.mx2`: increase `margin-left` and `margin-right` by 2 units (`16px`)
+- `.my2`: increase `margin-top` and `margin-bottom` by 2 units (`16px`)
+- `.ma3`: set all margins to 3 units (`margin: 24px`)
+- `.mxauto`: set `margin-left` and `margin-right` to `auto`
 
 _Replace `m` with `p` for padding_
 
@@ -134,37 +134,37 @@ Modify font and type characteristics easily.
 // ----------
 //  (F)ont
 // ----------
-.fw-100 { font-weight: 100; }
-.fw-200 { font-weight: 200; }
-.fw-300 { font-weight: 300; }
-.fw-400 { font-weight: 400; }
-.fw-500 { font-weight: 500; }
-.fw-600 { font-weight: 600; }
-.fw-700 { font-weight: 700; }
-.fw-800 { font-weight: 800; }
-.fw-900 { font-weight: 900; }
+.fw100 { font-weight: 100; }
+.fw200 { font-weight: 200; }
+.fw300 { font-weight: 300; }
+.fw400 { font-weight: 400; }
+.fw500 { font-weight: 500; }
+.fw600 { font-weight: 600; }
+.fw700 { font-weight: 700; }
+.fw800 { font-weight: 800; }
+.fw900 { font-weight: 900; }
 
-.fs-n   { font-style: normal; }
-.fs-i   { font-style: italic; }
+.fsn   { font-style: normal; }
+.fsi   { font-style: italic; }
 
 // ----------
 //  (T)ext
 // ----------
-.ta-c   { text-align: center; }
-.ta-r   { text-align: right; }
-.ta-l   { text-align: left; }
-.ta-j   { text-align: justify; }
-.td-n   { text-decoration: none; }
-.td-u   { text-decoration: underline; }
-.tt-n   { text-transform: none; }
-.tt-u   { text-transform: uppercase; }
+.tac   { text-align: center; }
+.tar   { text-align: right; }
+.tal   { text-align: left; }
+.taj   { text-align: justify; }
+.tdn   { text-decoration: none; }
+.tdu   { text-decoration: underline; }
+.ttn   { text-transform: none; }
+.ttu   { text-transform: uppercase; }
 ```
 
 #### Examples
 
-- `.ta-l`/`.ta-c`/`.ta-r`/`.ta-j`: Align text to `left`/`center`/`right`/`justify` respectively
-- `.td-n`/`.td-u`: Set `text-decoration` to `none` or `underline`
-- `.tt-n`/`.tt-u`: Set `text-transform` to `none` or `uppercase`
+- `.tal`/`.tac`/`.tar`/`.taj`: Align text to `left`/`center`/`right`/`justify` respectively
+- `.tdn`/`.tdu`: Set `text-decoration` to `none` or `underline`
+- `.ttn`/`.ttu`: Set `text-transform` to `none` or `uppercase`
 - `.fw-700`: Set `font-weight` to `700` (bold)\*
 
 💁 \* For `font-weight`, use `400` instead of `normal` and `700` instead of `bold`. Many typefaces (including variable fonts) support more than 2 weights, and using the `100`–`900` numbers lets you take advantage of the full range more easily.
